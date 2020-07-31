@@ -1,0 +1,10 @@
+/.idea/
+/mysql/
+/docker/
+/public/assets/design/bundle.js
+/public/assets/design/main.css
+/node_modules/
+/public/core/config/config.inc.php
+/public/core/cache/
+!/public/assets/design/images/
+/public/

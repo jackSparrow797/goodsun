@@ -1,0 +1,76 @@
+.menu-complect {
+  li {
+    border-top: 1px solid #D9D9D9;
+    display: block;
+    padding: 15px 0;
+
+    &:nth-of-type(1) {
+      border: none;
+    }
+
+    &.active, &:hover {
+      a {
+        color:#008787;
+        text-decoration: none;
+      }
+    }
+
+    a {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $f18px;
+      line-height: 125%;
+      letter-spacing: 0.03em;
+      color: #575757;
+
+    }
+  }
+}
+
+.complect-item {
+  .title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: $f18px;
+    line-height: $f25px;
+    color: #1A2225;
+
+  }
+  .code {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f16px;
+    line-height: 120%;
+    /* or 19px */
+
+    letter-spacing: 0.01em;
+
+    color: #575757;
+  }
+
+  .price {
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: $f20px;
+    line-height: $f24px;
+    text-transform: uppercase;
+    color: #CC0000;
+  }
+  .card-footer {
+    background: none;
+    border: none;
+  }
+}
+
+.slider-complect a.title {
+  display: block;
+  overflow: hidden;
+  height: 124px;
+}
+
+@include media-breakpoint-down(lg) {
+
+}

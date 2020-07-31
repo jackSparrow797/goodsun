@@ -1,0 +1,79 @@
+.catalog-item {
+  h4 {
+    position: absolute;
+    bottom: $f10px;
+    left: $f15px;
+    font-weight: 600;
+    font-size: $f18px;
+    line-height: $f25px;
+    color: #FFFFFF;
+  }
+}
+
+.product-item {
+  .card {
+    background: linear-gradient(180deg, #F1F1F1 0%, #FCFCFC 100%);
+    border: 1px solid #E1E1E1;
+    background-position: right center;
+    background-repeat: no-repeat;
+
+    .sale {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      padding: 10px 20px;
+      background: #CC0000;
+      border-radius: 0 50px 50px 0;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: $f14px;
+      line-height: 150%;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+    }
+
+    .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      h5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: $f18px;
+        line-height: $f25px;
+        span {
+          display: block;
+          color: #CC0000;
+        }
+      }
+    }
+  }
+}
+
+.video {
+  background: url("/assets/design/images/video-back.jpg") no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  z-index: 1;
+  transform: translate(-50%,-50%);
+}
+
+
+
+@include media-breakpoint-down(lg) {
+  .filters-outer {
+    display: none;
+  }
+}

@@ -1,0 +1,119 @@
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #008787;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+$white: #fff !default;
+
+// buttons
+$btn-border-radius: 50px;
+$btn-font-family: "Rubik", sans-serif;
+$btn-font-size: 12px;
+$btn-line-height: 2.2;
+$btn-padding-x: 20px;
+$link-color: #132A5E;
+// buttons
+
+$font-color: #1A2225;
+
+$gray: #F2F2F2;
+
+$gray-900: #201E1C;
+$gray-600: #201E1C;
+$border-gray: #E0E0E0;
+
+$bg: #201E1C;
+
+$fbase: 16;
+$f5px: #{5/$fbase}rem;
+$f6px: #{6/$fbase}rem;
+$f7px: #{7/$fbase}rem;
+$f8px: #{8/$fbase}rem;
+$f9px: #{9/$fbase}rem;
+$f10px: #{10/$fbase}rem;
+$f11px: #{11/$fbase}rem;
+$f12px: #{12/$fbase}rem;
+$f13px: #{13/$fbase}rem;
+$f14px: #{14/$fbase}rem;
+$f15px: #{15/$fbase}rem;
+$f16px: #{16/$fbase}rem;
+$f17px: #{17/$fbase}rem;
+$f18px: #{18/$fbase}rem;
+$f19px: #{19/$fbase}rem;
+$f20px: #{20/$fbase}rem;
+$f22px: #{22/$fbase}rem;
+$f23px: #{23/$fbase}rem;
+$f24px: #{24/$fbase}rem;
+$f25px: #{25/$fbase}rem;
+$f26px: #{26/$fbase}rem;
+$f27px: #{27/$fbase}rem;
+$f28px: #{28/$fbase}rem;
+$f29px: #{29/$fbase}rem;
+$f30px: #{30/$fbase}rem;
+$f31px: #{31/$fbase}rem;
+$f32px: #{32/$fbase}rem;
+$f34px: #{34/$fbase}rem;
+$f35px: #{35/$fbase}rem;
+$f36px: #{36/$fbase}rem;
+$f38px: #{38/$fbase}rem;
+$f40px: #{40/$fbase}rem;
+$f42px: #{42/$fbase}rem;
+$f47px: #{47/$fbase}rem;
+$f48px: #{48/$fbase}rem;
+$f50px: #{50/$fbase}rem;
+$f52px: #{52/$fbase}rem;
+$f55px: #{55/$fbase}rem;
+$f60px: #{60/$fbase}rem;
+$f62px: #{62/$fbase}rem;
+$f63px: #{63/$fbase}rem;
+$f64px: #{64/$fbase}rem;
+$f65px: #{65/$fbase}rem;
+$f66px: #{66/$fbase}rem;
+$f69px: #{69/$fbase}rem;
+$f72px: #{72/$fbase}rem;
+$f75px: #{75/$fbase}rem;
+$f76px: #{76/$fbase}rem;
+$f80px: #{80/$fbase}rem;
+$f100px: #{100/$fbase}rem;
+$f250px: #{250/$fbase}rem;
+
+
+$content-xl: 1300px;
+$content-lg: 1100px;
+$content-md: 920px;
+$content-sm: 540px;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 950px,
+        lg: 1130px,
+        xl: 1330px
+);
+
+$container-max-widths: (
+        sm: $content-sm,
+        md: $content-md,
+        lg: $content-lg,
+        xl: $content-xl
+);
+
+$cDark: #201E1C;
+$input-bottom-color: $font-color;
+$input-color: $font-color;
+
+$modal-md: 630px;
+$modal-header-padding: 0 0 1rem 0;
+$modal-inner-padding: 1rem 0;
+
+$color-dot: $white;
+$color-dot-grey: #ACACAC;
+$dot-width: $f16px;
+$dot-height: $f16px;
+
+$modal-content-bg: #fff;

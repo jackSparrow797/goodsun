@@ -1,0 +1,161 @@
+.slick-dots {
+  position: absolute;
+  min-width: 290px;
+  bottom: $f24px;
+  padding: 0;
+  display: inline-block;
+  text-align: right;
+  width: 50%;
+  right: 50%;
+  margin-right: -638px;
+
+  li {
+    display: inline-block;
+    margin-left: $f7px;
+
+    button {
+      font-size: 0;
+      outline: none;
+      border-radius: 100%;
+      width: $dot-width;
+      height: $dot-height;
+      padding: 0;
+      border: 1px solid $color-dot;
+      background: none;
+    }
+
+    &.slick-active {
+      button {
+        background: $color-dot;
+      }
+    }
+  }
+}
+.dots-grey .slick-dots  li {
+  button {
+    border: 1px solid $color-dot-grey;
+  }
+  &.slick-active {
+    button {
+      background: $color-dot-grey;
+    }
+  }
+
+}
+
+
+.slider {
+  .slide-item {
+    padding-left: 0;
+    padding-right: 0;
+
+    .img {
+      height: 710px;
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: cover;
+      width: 100% !important;
+      position: relative;
+
+      .slide-caption {
+        position: absolute;
+        top: 245px;
+        width: 100%;
+        left: 0;
+
+        h3 {
+          font-weight: 500;
+          font-size: $f55px;
+          line-height: $f66px;
+          text-align: left;
+          color: $white;
+        }
+
+        p {
+          font-size: $f20px;
+          line-height: $f25px;
+          color: $white;
+        }
+      }
+    }
+
+  }
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  &.next {
+    right: -$f60px;
+  }
+  &.prev {
+    left: -$f60px;
+  }
+}
+
+
+
+.slick-disabled {
+  opacity: 0.5;
+}
+
+.slide-v1 {
+  display: none;
+}
+
+.slide-v1:first-child {
+  display: block;
+}
+
+.slick-initialized.slick-slider .slick-slide,
+.slick-initialized.slick-slider .slick-slide:first-child {
+  display: block;
+}
+
+@include media-breakpoint-down(lg) {
+  .slider {
+    .slide-item {
+      .img {
+        height: 545px;
+
+        .slide-caption {
+          top: 114px;
+
+          h3 {
+            font-size: $f28px;
+            line-height: $f34px;
+          }
+
+          p {
+            font-size: $f16px;
+            line-height: $f19px;
+          }
+        }
+      }
+    }
+  }
+
+  .slick-dots {
+    width: 100%;
+    right: initial;
+    margin-right: 0;
+    text-align: center;
+  }
+  .dots-bottom .slick-dots {
+    position: initial;
+    margin-top: $f30px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .slider {
+    .slide-item {
+      .img {
+        .slide-caption {
+          width: 80%;
+        }
+      }
+    }
+  }
+}

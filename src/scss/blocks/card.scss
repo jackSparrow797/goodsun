@@ -1,0 +1,221 @@
+.card-small-img {
+  height: 130px;
+  margin-bottom: 10px;
+
+  &.slick-slide {
+    position: relative;
+
+    &.slick-current {
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(26, 34, 37, 0.4);
+    }
+  }
+}
+
+.card-detail {
+  h1 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $f48px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+
+
+    span {
+      display: block;
+    }
+
+    .text-red {
+      color: #CC0000;
+    }
+  }
+
+  h5 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f22px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+  }
+
+  p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f16px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #616161;
+  }
+
+  .price {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $f28px;
+    line-height: $f32px;
+    text-transform: uppercase;
+    color: #CC0000;
+  }
+
+  .btn-outline-danger {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f12px;
+    line-height: $f14px;
+    text-transform: uppercase;
+
+    color: #CC0000;
+  }
+}
+
+.card-tabs-link {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid #D9D9D9;
+
+  li {
+    display: inline-block;
+    margin: 0 15px;
+    padding-bottom: 4px;
+    border-bottom: 3px solid transparent;
+
+    &.active, &:hover {
+      position: relative;
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      &:after {
+        border-bottom: 3px solid #008787;
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        left: 0;
+        bottom: -4.5px;
+      }
+    }
+
+    a {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: $f14px;
+      line-height: 120%;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.card-tab {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.character-block {
+  h4 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $f16px;
+    line-height: 120%;
+    text-transform: uppercase;
+
+    color: #CC0000;
+  }
+}
+
+.modal-commerc {
+  h2 {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $f35px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    margin-bottom: $f20px;
+
+  }
+
+  p {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: $f18px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    color: #1A2225;
+  }
+
+  .price {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $f28px;
+    line-height: $f32px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #CC0000;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+
+  .card-detail {
+    h1 {
+      font-size: 28px;
+      line-height: 125%;
+    }
+  }
+
+  .character-block {
+    a {
+      padding-right: 15px;
+      position: relative;
+      display: block;
+
+      &.open:after {
+        transform: rotate(0deg);
+      }
+
+      &:after {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        content: '';
+        display: block;
+        background: url('/assets/design/images/arrow-red.png');
+        width: 8px;
+        height: 3px;
+        transform: rotate(-180deg);
+      }
+    }
+
+    .character-ul {
+      display: none;
+    }
+  }
+
+}
+

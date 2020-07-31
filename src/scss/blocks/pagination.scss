@@ -1,0 +1,23 @@
+.pagination {
+  li {
+    display: inline-block;
+    margin: 0 10px;
+
+    &.active, &.disabled {
+      a {
+        color: $font-color;
+      }
+    }
+
+    a {
+      font-family: Rubik;
+      font-size: $f22px;
+      line-height: $f30px;
+      color: #828282;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

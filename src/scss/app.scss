@@ -1,0 +1,25 @@
+// Required
+
+@import "variable";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Optional
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/utilities/spacing";
+@import "~bootstrap/scss/utilities/flex";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/card";
+@import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/text";
+
+
+@import './main';
+@import './header';
+//@import './slick';
+@import './menu';
+@import './left-menu';
+@import './customs';
+@import './blocks';

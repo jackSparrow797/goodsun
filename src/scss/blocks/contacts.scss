@@ -1,0 +1,17 @@
+.contacts {
+  font-style: normal;
+  font-weight: normal;
+  font-size: $f16px;
+  line-height: 120%;
+}
+
+.footer {
+  h2 {
+    font-weight: 500;
+    font-size: $f22px;
+    line-height: $f27px;
+    letter-spacing: 0.01em;
+    margin-top: $f25px !important;
+    margin-bottom: $f17px !important;
+  }
+}

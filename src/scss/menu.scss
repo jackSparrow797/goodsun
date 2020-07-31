@@ -1,0 +1,188 @@
+.position-relative {
+  position: relative;
+}
+
+.menu {
+  ul {
+    list-style: none;
+
+    li {
+      position: relative;
+
+      &.submenu_wrapp {
+        a {
+          display: inline-block;
+          vertical-align: top;
+        }
+      }
+
+      &.active {
+        a {
+          color: #008787;
+        }
+      }
+
+      a {
+        &.submenu-open {
+          padding: 5px;
+          margin-top: -7px;
+
+          &.open {
+            img {
+              transform: rotate(180deg);
+            }
+          }
+        }
+
+
+        &:hover {
+          color: #008787;
+          text-decoration: none;
+        }
+
+
+      }
+
+
+    }
+  }
+
+  > ul {
+
+    > li {
+
+      > a {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: $f16px;
+        line-height: $f19px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $font-color;
+
+      }
+
+      &:hover ul {
+        display: block;
+      }
+
+      > ul {
+
+        z-index: 15;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding-top: $f31px !important;
+
+        > li {
+          > a {
+            text-transform: initial;
+            position: relative;
+            padding-left: 15px;
+
+            &:nth-of-type(1):before {
+              content: '-';
+              position: absolute;
+              left: 0;
+              top: -1px;
+            }
+
+          }
+
+          ul {
+            padding-left: 15px;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+
+.menu > ul > li.submenu_wrapp > a {
+  display: initial;
+  vertical-align: initial;
+}
+.menu ul li.submenu_wrapp ul {
+  min-width: 250px;
+  max-width: 100%;
+}
+
+.menu ul li.submenu_wrapp a:nth-of-type(1) {
+  max-width: 80%;
+}
+.menu ul li.submenu_wrapp a:nth-of-type(2) {
+  max-width: 18%;
+}
+
+.menu-mobile-toggle {
+  img {
+    display: block
+  }
+
+  img.close {
+    display: none
+  }
+
+  &.open {
+    img.close {
+      display: block
+    }
+
+    img {
+      display: none
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .menu ul li.submenu_wrapp  ul {
+    padding: $f15px;
+    background: #fff;
+
+  }
+  .menu ul li.submenu_wrapp > ul li a.submenu-open {
+    display: none;
+  }
+  .menu > ul > li.submenu_wrapp > ul > li > ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -$f15px;
+  }
+  .menu > ul > li.submenu_wrapp > ul > li:hover > ul {
+    display: block;
+  }
+
+}
+@include media-breakpoint-down(lg) {
+  .menu-outer {
+    display: none;
+  }
+  .menu ul li {
+    width: 100%;
+  }
+  .menu > ul > li ul {
+    position: relative;
+  }
+  .menu ul li.submenu_wrapp ul {
+    display: none;
+    padding: $f15px 0!important;
+  }
+
+  .menu > ul > li.submenu_wrapp ul > li > ul {
+    padding: $f15px !important;
+  }
+
+  .menu ul li.submenu_wrapp a:nth-of-type(1) {
+    max-width: 80%;
+  }
+  .menu ul li.submenu_wrapp a:nth-of-type(2) {
+    max-width: 18%;
+  }
+
+}

@@ -1,0 +1,39 @@
+.faq-item {
+  h5 {
+    font-weight: 600;
+    font-size: $f18px;
+    line-height: $f22px;
+    letter-spacing: 0.02em;
+  }
+
+  p {
+    font-size: $f16px;
+    line-height: $f20px;
+    letter-spacing: 0.02em;
+    color: #616161;
+  }
+
+  .faq-arrow {
+    transform: rotate(90deg);
+    color: #008787;
+    font-size: 40px;
+    font-family: monospace;
+    position: absolute;
+    top: 0;
+    right: 0;
+    &.close {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .text {
+    font-size: $f16px;
+    line-height: $f22px;
+    text-decoration-line: underline;
+    color: #008787;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+
+}

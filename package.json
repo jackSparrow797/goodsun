@@ -1,0 +1,44 @@
+{
+  "name": "eco",
+  "version": "1.0.0",
+  "description": "front-design",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackSparrow797/design-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackSparrow797/design-template/issues"
+  },
+  "homepage": "https://github.com/jackSparrow797/design-template#readme",
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
+    "axios": "^0.19.1",
+    "blazy": "^1.8.2",
+    "bootstrap": "^4.4.1",
+    "css-loader": "^3.4.2",
+    "jquery": "^3.4.1",
+    "jquery-mask-plugin": "^1.14.16",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.16.0",
+    "sass-loader": "^8.0.2",
+    "slick-carousel": "^1.8.1",
+    "webpack": "^4.41.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "file-loader": "^5.0.2",
+    "image-webpack-loader": "^6.0.0",
+    "webpack-cli": "^3.3.10"
+  }
+}
