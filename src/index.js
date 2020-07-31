@@ -13,9 +13,9 @@ import 'bootstrap/js/dist/modal';
 import 'jquery-mask-plugin';
 import '@fancyapps/fancybox'
 import './js/sliders';
-import './js/menu';
+// import './js/menu';
 // import './js/capcha';
-import './js/form';
+// import './js/form';
 // import './js/ajax';
 
 // const IMG = require.context('./images/', true, /\.png||\.jpg/);

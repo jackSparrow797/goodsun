@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=family=Rubik:wght@400;500&display=swap');
+
+
+$font-main: Rubik;
+$font-h: Rubik;
+$font-link: Rubik;
+
+h1 {
+  font-family: $font-h;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $f48px;
+  line-height: $f60px;
+  letter-spacing: 0.03em;
+}
+
+
+h2 {
+  font-family: $font-h;
+  font-style: normal;
+  font-weight: 500;
+  font-size: $f48px;
+  line-height: $f60px;
+  letter-spacing: 0.03em;
+  color: $font-color;
+  margin-bottom: $f60px;
+}
+
+h3 {
+  font-family: $font-h;
+  font-weight: 500;
+  font-size: $f40px;
+  line-height: $f60px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: $f20px;
+}
+
+.btn-link {
+  font-family: $font-link;
+}

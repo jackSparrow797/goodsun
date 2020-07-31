@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@400;500&display=swap');
 
 body {
   margin: 0;
   color: $font-color;
   font-style: normal;
   font-weight: normal;
-  font-family: 'Open Sans', sans-serif
+  font-family: $font-main
 }
 
 html, body {
@@ -20,35 +19,7 @@ a {
   }
 }
 
-h1 {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 500;
-  font-size: $f48px;
-  line-height: $f60px;
-  letter-spacing: 0.03em;
-}
 
-h2 {
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: 500;
-  font-size: $f48px;
-  line-height: $f60px;
-  letter-spacing: 0.03em;
-  color: $font-color;
-  margin-bottom: $f60px;
-}
-
-h3 {
-  font-family: Rubik;
-  font-weight: 500;
-  font-size: $f40px;
-  line-height: $f60px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: $f20px;
-}
 
 .block-row {
   background-size: cover;
@@ -59,15 +30,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.btn-link {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: Rubik;
-  font-style: normal;
-  font-size: $f14px;
-  line-height: 120%;
-  text-decoration-line: underline;
-}
+
 
 html {
   font-size: #{$fbase}px;
